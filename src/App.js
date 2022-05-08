@@ -5,8 +5,9 @@ import Footer from './components/Footer/Footer'
 import LandingPage from './routes/LandingPage/LandingPage';
 import Details from './routes/Details/Details';
 
-import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
+
 
 class App extends React.Component {
   render() {

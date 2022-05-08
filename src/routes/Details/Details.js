@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Card } from 'react-bootstrap';
 import './Details.css'
 
 const Fields = () => {
@@ -55,8 +55,29 @@ const Fields = () => {
                 </Button>
  
                 {food &&
-                    <div>
-                    The recommended restaurants are:    
+                    <div className='mt-4'>
+
+                        <h5>The recommended restaurants are:    </h5>
+                        <Card className = "mt-1">
+                            <Card.Body>
+                                <Card.Title>1.Maria si Ion</Card.Title>
+                                <Card.Text>
+                                    Best Romanian Traditional food for students
+                                </Card.Text>
+                                <Button variant="primary">Go somewhere</Button>
+                            </Card.Body>
+                        </Card>
+
+                        <Card  className = "mt-3">
+                            <Card.Body>
+                                <Card.Title>2.Trattoria</Card.Title>
+                                <Card.Text>
+                                    Traditional food
+                                </Card.Text>
+                                <Button variant="primary">Go somewhere</Button>
+                            </Card.Body>
+                        </Card>
+
                     </div>
                 }
            </Form>
