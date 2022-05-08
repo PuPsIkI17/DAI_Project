@@ -1,0 +1,8 @@
+.App {
+    background-color: aliceblue;
+    justify-content: space-between;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    flex: 1;
+}

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput Component renders the UI as expected 1`] = `
+<div
+  className="input"
+>
+  <label>
+    Label
+  </label>
+  <input
+    defaultValue=""
+    id="defaultInput"
+    onChange={[Function]}
+    placeholder=""
+    required={false}
+    type="text"
+  />
+</div>
+`;
