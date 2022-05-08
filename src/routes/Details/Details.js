@@ -15,7 +15,7 @@ const Fields = () => {
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Proteins</Form.Label>
+                    <Form.Label>Fats</Form.Label>
                     <Form.Control type="email" placeholder="0 gr" />
                 </Form.Group>
 
@@ -33,7 +33,7 @@ const Fields = () => {
 
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>How much hungry are you?</Form.Label><br/>
+                    <Form.Label>How hungry are you?</Form.Label><br/>
                     <input type="range" list="tickmarks"/>
                     <datalist id="tickmarks">
                     <option value="0" label="0%"></option>
