@@ -1,0 +1,7 @@
+SCRAPER_SELECTOR_RESTAURANTS='div[data-qa="restaurant-list-open-section"] > div[data-qa="util"] > ul'
+SCRAPER_SELECTOR_NUTRITION_TABLE='td[class="details"] > div[class="factPanel"]'
+SCRAPER_SELECTOR_RESTAURANT_TOP_MEALS='section[data-qa="popular-items"]'
+SCRAPER_SELECTOR_NUTRITION_TABLE_SIDE='div[class="nutrition_facts eu"]'
+SCRAPER_NUMBER_OF_RESTAURANTS_TO_PROCESS=3
+DATABASE_URL='mongodb://localhost:27017/meals_api'
+

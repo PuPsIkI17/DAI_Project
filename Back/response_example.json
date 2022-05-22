@@ -1,0 +1,218 @@
+Method Post : 192.168.232.150: 9091
+
+Body: {
+    "kcal": "1203",
+    "fats": "10",
+    "proteins": "40",
+    "hunryMeter": "80",
+    "lat": "44.423066",
+    "lon": "25.993926"
+}
+
+Response Example:
+
+[
+    [
+        {
+            "restaurantName": "KA Classic",
+            "restaurantUrl": "https://www.takeaway.com/ro-en/menu/ka-la-tusa",
+            "restaurantRating": "3,8",
+            "meals": [
+                {
+                    "_id": "628abe5f3dc1a23062118b1f",
+                    "mealName": "Quattro formaggi pizza",
+                    "restaurantName": "KA Classic",
+                    "restaurantUrl": "https://www.takeaway.com/ro-en/menu/ka-la-tusa",
+                    "restaurantRating": "3,8",
+                    "kcal": "256",
+                    "fats": "6.80",
+                    "carbs": "35.80",
+                    "proteins": "12.90",
+                    "__v": 0
+                },
+                {
+                    "_id": "628abe5f3dc1a23062118b21",
+                    "mealName": "Capricciosa pizza",
+                    "restaurantName": "KA Classic",
+                    "restaurantUrl": "https://www.takeaway.com/ro-en/menu/ka-la-tusa",
+                    "restaurantRating": "3,8",
+                    "kcal": "314",
+                    "fats": "10.20",
+                    "carbs": "40.60",
+                    "proteins": "12.60",
+                    "__v": 0
+                }
+            ]
+        }
+    ],
+    {
+        "restaurantName": "Athos Bistro & Pizza",
+        "restaurantUrl": "https://www.takeaway.com/ro-en/menu/athos-bistro-pizza",
+        "restaurantRating": "2,8",
+        "meals": [
+            {
+                "_id": "628ac9f293d01c5dda3c5c18",
+                "mealName": "Diavolo pizza",
+                "restaurantName": "Athos Bistro & Pizza",
+                "restaurantUrl": "https://www.takeaway.com/ro-en/menu/athos-bistro-pizza",
+                "restaurantRating": "2,8",
+                "kcal": "461",
+                "fats": "16.60",
+                "carbs": "56.20",
+                "proteins": "19.80",
+                "__v": 0
+            },
+            {
+                "_id": "628ac9f293d01c5dda3c5c1a",
+                "mealName": "Platter for  persons",
+                "restaurantName": "Athos Bistro & Pizza",
+                "restaurantUrl": "https://www.takeaway.com/ro-en/menu/athos-bistro-pizza",
+                "restaurantRating": "2,8",
+                "kcal": "614",
+                "fats": "35.35",
+                "carbs": "33.33",
+                "proteins": "38.96",
+                "__v": 0
+            },
+            {
+                "_id": "628ac9f293d01c5dda3c5c1c",
+                "mealName": "Athos piza Giant cm x cm",
+                "restaurantName": "Athos Bistro & Pizza",
+                "restaurantUrl": "https://www.takeaway.com/ro-en/menu/athos-bistro-pizza",
+                "restaurantRating": "2,8",
+                "kcal": "487",
+                "fats": "19.46",
+                "carbs": "50.21",
+                "proteins": "28.46",
+                "__v": 0
+            }
+        ]
+    },
+    {
+        "restaurantName": "Burgergod",
+        "restaurantUrl": "https://www.takeaway.com/ro-en/menu/burgergod",
+        "restaurantRating": "4",
+        "meals": [
+            {
+                "_id": "628abf40bccd8538bc440f4f",
+                "mealName": "Burger God",
+                "restaurantName": "Burgergod",
+                "restaurantUrl": "https://www.takeaway.com/ro-en/menu/burgergod",
+                "restaurantRating": "4",
+                "kcal": "196",
+                "fats": "7.00",
+                "carbs": "30.50",
+                "proteins": "6.40",
+                "__v": 0
+            },
+            {
+                "_id": "628ac67ea5e9383f427679d4",
+                "mealName": "Diavolo pizza",
+                "restaurantName": "Burgergod",
+                "restaurantUrl": "https://www.takeaway.com/ro-en/menu/burgergod",
+                "restaurantRating": "4",
+                "kcal": "461",
+                "fats": "16.60",
+                "carbs": "56.20",
+                "proteins": "19.80",
+                "__v": 0
+            },
+            {
+                "_id": "628ac67ea5e9383f427679d6",
+                "mealName": "Platter for  persons",
+                "restaurantName": "Burgergod",
+                "restaurantUrl": "https://www.takeaway.com/ro-en/menu/burgergod",
+                "restaurantRating": "4",
+                "kcal": "614",
+                "fats": "35.35",
+                "carbs": "33.33",
+                "proteins": "38.96",
+                "__v": 0
+            },
+            {
+                "_id": "628ac67ea5e9383f427679d8",
+                "mealName": "Athos piza Giant cm x cm",
+                "restaurantName": "Burgergod",
+                "restaurantUrl": "https://www.takeaway.com/ro-en/menu/burgergod",
+                "restaurantRating": "4",
+                "kcal": "487",
+                "fats": "19.46",
+                "carbs": "50.21",
+                "proteins": "28.46",
+                "__v": 0
+            },
+            {
+                "_id": "628ac8068695b45003e65d6d",
+                "mealName": "Diavolo pizza",
+                "restaurantName": "Burgergod",
+                "restaurantUrl": "https://www.takeaway.com/ro-en/menu/burgergod",
+                "restaurantRating": "4",
+                "kcal": "461",
+                "fats": "16.60",
+                "carbs": "56.20",
+                "proteins": "19.80",
+                "__v": 0
+            },
+            {
+                "_id": "628ac8068695b45003e65d6f",
+                "mealName": "Platter for  persons",
+                "restaurantName": "Burgergod",
+                "restaurantUrl": "https://www.takeaway.com/ro-en/menu/burgergod",
+                "restaurantRating": "4",
+                "kcal": "614",
+                "fats": "35.35",
+                "carbs": "33.33",
+                "proteins": "38.96",
+                "__v": 0
+            },
+            {
+                "_id": "628ac8068695b45003e65d71",
+                "mealName": "Athos piza Giant cm x cm",
+                "restaurantName": "Burgergod",
+                "restaurantUrl": "https://www.takeaway.com/ro-en/menu/burgergod",
+                "restaurantRating": "4",
+                "kcal": "288",
+                "fats": "11.65",
+                "carbs": "33.21",
+                "proteins": "12.72",
+                "__v": 0
+            },
+            {
+                "_id": "628ac8a8271e2a54ff181685",
+                "mealName": "Diavolo pizza",
+                "restaurantName": "Burgergod",
+                "restaurantUrl": "https://www.takeaway.com/ro-en/menu/burgergod",
+                "restaurantRating": "4",
+                "kcal": "461",
+                "fats": "16.60",
+                "carbs": "56.20",
+                "proteins": "19.80",
+                "__v": 0
+            },
+            {
+                "_id": "628ac8a8271e2a54ff181687",
+                "mealName": "Platter for  persons",
+                "restaurantName": "Burgergod",
+                "restaurantUrl": "https://www.takeaway.com/ro-en/menu/burgergod",
+                "restaurantRating": "4",
+                "kcal": "614",
+                "fats": "35.35",
+                "carbs": "33.33",
+                "proteins": "38.96",
+                "__v": 0
+            },
+            {
+                "_id": "628ac8a8271e2a54ff181689",
+                "mealName": "Athos piza Giant cm x cm",
+                "restaurantName": "Burgergod",
+                "restaurantUrl": "https://www.takeaway.com/ro-en/menu/burgergod",
+                "restaurantRating": "4",
+                "kcal": "487",
+                "fats": "19.46",
+                "carbs": "50.21",
+                "proteins": "28.46",
+                "__v": 0
+            }
+        ]
+    }
+]
