@@ -1,13 +1,14 @@
 import React, {useState, useEffect} from 'react';
-import { Form, Button, Card } from 'react-bootstrap';
+import { Form, Button, Card, Spinner } from 'react-bootstrap';
 import axios from 'axios';
-import response from './response.json';
 
 import './Details.css'
 
 const Fields = () => {
     const [food, setFood] = useState(false);
     const [meals, setMeals] = useState([]);
+    const [spinner, setSpinner] = useState(false);
+
 
     useEffect(() => {
         navigator.geolocation.getCurrentPosition(function(position) {
@@ -33,12 +34,15 @@ const Fields = () => {
         
         const json = { kcal: values.kcal, fats:values.fats, hunryMeter:values.hunryMeter, lat:values.lat, lon:values.lon};
         let message;
+        setSpinner(true);
         try {
             const res = await axios.post(url, json);
             message = res.data;
         } catch (e) {
             message = e;
         }
+        setSpinner(false);
+
         //comment this if db works fine
         setMeals(message);
     }
@@ -131,15 +135,26 @@ const Fields = () => {
                     <Form.Control type="number" placeholder="0 gr" name="lat" value={values.lat} onChange={changeValue}/>
                 </Form.Group>
 
-
-                <Button className='mb-4' variant="primary" onClick = {handleSubmit}>
-                    Submit
-                </Button>
-
+                {
+                    !food && 
+                    <Button className='mb-4' variant="primary" onClick = {handleSubmit}>
+                        Submit
+                    </Button>
+                }
                 {food &&
                     <div className='mt-4'>
-                        <h5>The recommended restaurants are:    </h5>
+                        <h5>The recommended restaurants are:</h5>
                         {allRestaurants}
+                    </div>
+                }
+                {spinner &&
+                    <div className='text-center'>
+                        <div className='mt-4 mb-4'>
+                            <Spinner animation="border" role="status"/>
+                        </div>
+                        <Button className='mt-4' variant="primary" >
+                            Retry
+                        </Button>
                     </div>
                 }
            </Form>
