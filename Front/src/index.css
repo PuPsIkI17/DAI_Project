@@ -5,9 +5,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
 }
 #root{height: 100vh;}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+ 
+a:link { 
+  text-decoration: none; 
+  color:#00A0C6; 
+}
+
+a:visited { 
+  text-decoration: none; 
+  color:#60C0FF; 
+}
+
+a:hover { 
+  text-decoration: none; 
+}
+
+a:active { 
+  text-decoration: none; 
 }

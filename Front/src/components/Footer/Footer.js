@@ -5,7 +5,7 @@ export default class Footer extends React.Component {
     render() {
         return (
             <footer>
-                <p>DAI University Project</p>
+                <p className = "mt-3">DAI University Project</p>
             </footer>
         )
     }

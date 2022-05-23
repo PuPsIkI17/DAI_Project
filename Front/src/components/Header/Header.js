@@ -21,7 +21,7 @@ export default class Header extends React.Component {
         return (
             <header>
                 <div id="logo">
-                    <h2><a href="/">Meal Builder</a></h2>
+                    <h2 className='mt-2'><a href="/">Meal Builder</a></h2>
                 </div>
 
                 <nav role="navigation" className={this.state.mobile ? "" : "hidden"}>
