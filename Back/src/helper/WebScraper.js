@@ -3,8 +3,7 @@ const cheerio = require('cheerio');
 const google = require('googlethis');
 const DDG = require('duck-duck-scrape');
 const sleep = require('sleep');
-const helper = require('puppeteer-core/lib/helper');
-const puppeteer = require('puppeteer-core');
+const puppeteer = require('puppeteer');
 
 require("dotenv").config();
 
@@ -22,10 +21,11 @@ const MealNutrients = {
 // Definitions
 async function getWebPageWithJS(targetUrl, htmlSelector) {
     try {
-        const browser = await puppeteer.launch({
-            headless: false,
-            executablePath: '/usr/bin/chromium-browser'
-        });
+        const browser = await puppeteer.launch(
+            {
+                headless: false,
+            }
+        );
         const page = await browser.newPage();
 
         await page.goto(targetUrl, {waitUntil: 'networkidle0', timeout: 0});
@@ -53,10 +53,11 @@ async function getWebPageWithJS(targetUrl, htmlSelector) {
 // This should take like 10 seconds
 async function getTakewayPageForLocation(targetUrl, targetLocation) {
     try {
-        const browser = await puppeteer.launch({
-            headless: false,
-            executablePath: '/usr/bin/chromium-browser'
-        });
+        const browser = await puppeteer.launch(
+            {
+                headless: false,
+            }
+        );
         const page = await browser.newPage();
 
         await page.goto(targetUrl, {waitUntil: 'networkidle0', timeout: 0});

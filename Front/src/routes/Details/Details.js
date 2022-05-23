@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Form, Button, Card } from 'react-bootstrap';
 import axios from 'axios';
 import response from './response.json';
@@ -9,13 +9,18 @@ const Fields = () => {
     const [food, setFood] = useState(false);
     const [meals, setMeals] = useState([]);
 
+    useEffect(() => {
+        navigator.geolocation.getCurrentPosition(function(position) {
+        });
+    });
+
     const [values, setValues] = useState({
         kcal:0,
         fats:0,
         proteins:0,
-        hunryMeter:0,
-        lat:0,
-        lon:0
+        hunryMeter:50,
+        lat:44.423066,
+        lon:25.993926
     });
 
     const changeValue = e => {
@@ -30,34 +35,37 @@ const Fields = () => {
         let message;
         try {
             const res = await axios.post(url, json);
-            message = JSON.stringify(res.data.message);
+            message = res.data;
         } catch (e) {
             message = e;
         }
         //comment this if db works fine
-        message = response;
         setMeals(message);
     }
 
     const allRestaurants = meals.map(function(item, i){
         
-        
-        const  allMeals = item.meals.map(function(item, i){        
+        let rest = item;
+
+        if(Array.isArray(rest)){
+            rest = rest[0];
+        }
+
+        const allMeals = rest.meals.map(function(item, i){        
             return <div>
                 {i + 1}. {item.mealName}
             </div>
         })
 
-
         return <Card className = "mt-3">
                 <Card.Body>
-                    <Card.Title>{item.restaurantName}</Card.Title>
+                    <Card.Title>{rest.restaurantName}</Card.Title>
                     <Card.Text>
-                        <h6>Restaurant rating: {item.restaurantRating} </h6>
+                        <h6>Restaurant rating: {rest.restaurantRating} </h6>
                         Recommended meals:
                         {allMeals}
                     </Card.Text>
-                    <a href={item.restaurantUrl}><Button variant="warning">Visit</Button></a>
+                    <a href={rest.restaurantUrl}><Button variant="warning">Visit</Button></a>
                 </Card.Body>
             </Card>
     })

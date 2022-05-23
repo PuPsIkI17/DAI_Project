@@ -11,9 +11,19 @@ async function makeDb () {
     // Alert on connection*/
     //const db = await client.db(dbName)
     //db.makeId = makeIdFromString
-    const db = await (await mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true })).connection;
+
+    const db = await (await mongoose
+    .connect('mongodb://127.0.0.1:27017/meals_api', 
+        {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        }
+    )).connection;
+
     db.on('error', (error) => console.log(error));
     db.once('open', () => console.log('Connected to mongo'));
+
+    console.log("db connected");
     return db
 }
 

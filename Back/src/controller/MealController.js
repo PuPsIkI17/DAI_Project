@@ -133,9 +133,11 @@ async function getDatabaseMeals(restaurantName, restaurantUrl) {
 async function resolveMeals(clientStreetName, countryCode, options) {
 	var promisesList = [];
 
+
 	var topRestaurantsList = await pageScraper.getTopRestaurants(clientStreetName, options); 
 
 	var mealsList = [];
+
 
     console.log(topRestaurantsList);
 
